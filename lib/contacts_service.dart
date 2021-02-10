@@ -215,6 +215,9 @@ class Contact {
   Uint8List? avatar;
   DateTime? birthday;
 
+  bool isCasheroFriend = false;
+
+  
   String initials() {
     return ((this.givenName?.isNotEmpty == true ? this.givenName![0] : "") +
             (this.familyName?.isNotEmpty == true ? this.familyName![0] : ""))
