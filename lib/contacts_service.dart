@@ -191,6 +191,7 @@ class Contact {
   Iterable<PostalAddress> postalAddresses = [];
   Uint8List avatar;
   DateTime birthday;
+  bool isCasheroFriend = false;
 
   String initials() {
     return ((this.givenName?.isNotEmpty == true ? this.givenName[0] : "") +
